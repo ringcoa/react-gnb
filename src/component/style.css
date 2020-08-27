@@ -1,0 +1,32 @@
+/* reset */
+* {margin: 0; padding: 0; color: inherit; font-family: nanumgothic; font-size: 1em; font-style: inherit; font-weight: inherit; text-decoration: inherit; border: 0 solid transparent; outline: 0; box-sizing: border-box; background-repeat: no-repeat; background-color: transparent;}
+b, strong {font-weight: bold;}
+ul, ol {list-style: none;}
+input[type="button"], input[type="submit"],input[type="reset"],button,a,label {cursor: pointer;}
+
+
+
+#root {width: 100%; min-width: 450px; height: 100%; margin: 0 auto; padding-bottom:30px; background-color: #eee;}
+#root h1 {padding: 10px 0; text-align: center;}
+#root h1 i {font-size: 30px;}
+#root .gnb {}
+#root .gnb .main-nav {position: relative; margin-bottom: 50px; width: 100%; background-color: #aaa; height: 40px;}
+#root .gnb .main-nav .main-nav-item {float: left; width: 33%; text-align: center; height: 40px; line-height: 40px;}
+#root .gnb .main-nav .main-nav-item + .main-nav-item {border-left: 2px solid #999;}
+#root .gnb .main-nav .main-nav-item:hover>a {color: gold; position: relative; }
+#root .gnb .main-nav .main-nav-item:hover>a::after {content: ''; position: absolute; bottom: 0; left: 50%; margin-left: -60px; display: block; width: 120px; height: 3px; background-color: gold; }
+#root .gnb .main-nav .main-nav-item a {display: block;}
+#root .gnb .sub-nav {display: none; position: absolute; top: 40px; left: 0; overflow: hidden; background-color: #fff; height: 30px; line-height: 30px; width: 100%;}
+#root .gnb .sub-nav li {float: left; margin: 0 15px;}
+#root .gnb .main-nav li:hover .sub-nav {display: block}
+#root .page-main-info {margin: 20px 20px 0 20px; padding: 10px; border: 2px solid #aaa; border-radius: 5px;}
+
+#root .product-list {padding: 10px 20px;}
+#root .product-list li {overflow: hidden; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #888;}
+#root .product-list li .item-img {display: block; width: 100px; height: 100px; float: left;}
+#root .product-list li .text_area {float: left; margin-left: 20px; width: 60%;}
+#root .product-list li .text_area h3 {font-size: 20px; font-weight: bold; color: #555; margin-bottom: 15px;}
+#root .product-list li .text_area p {color: #666;}
+
+.active {font-weight: bold; color: gold;}
+.navactive {display: block !important;}
