@@ -1,6 +1,8 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 
 const ProductItem = ({data}) => {
+
+
     const imgSrc = 'http://ringcoa.dothome.co.kr/img/shop/'
     return (
       <>

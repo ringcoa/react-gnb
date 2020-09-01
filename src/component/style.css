@@ -16,9 +16,9 @@ input[type="button"], input[type="submit"],input[type="reset"],button,a,label {c
 #root .gnb .main-nav .main-nav-item:hover>a {color: gold; position: relative; }
 #root .gnb .main-nav .main-nav-item:hover>a::after {content: ''; position: absolute; bottom: 0; left: 50%; margin-left: -60px; display: block; width: 120px; height: 3px; background-color: gold; }
 #root .gnb .main-nav .main-nav-item a {display: block;}
-#root .gnb .sub-nav {display: none; position: absolute; top: 40px; left: 0; overflow: hidden; background-color: #fff; height: 30px; line-height: 30px; width: 100%;}
+#root .gnb .sub-nav {display: none; position: absolute; top: 40px; left: 0; overflow: hidden; background-color: #fff; height: 40px; line-height: 40px; width: 100%;}
 #root .gnb .sub-nav li {float: left; margin: 0 15px;}
-#root .gnb .main-nav li:hover .sub-nav {display: block}
+#root .gnb .main-nav li:hover .sub-nav {display: block; z-index: 10;}
 #root .page-main-info {margin: 20px 20px 0 20px; padding: 10px; border: 2px solid #aaa; border-radius: 5px;}
 
 #root .product-list {padding: 10px 20px;}
@@ -29,4 +29,4 @@ input[type="button"], input[type="submit"],input[type="reset"],button,a,label {c
 #root .product-list li .text_area p {color: #666;}
 
 .active {font-weight: bold; color: gold;}
-.navactive {display: block !important;}
+.navactive {display: block !important; z-index: 0;}

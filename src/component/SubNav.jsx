@@ -1,4 +1,4 @@
-import React , {useRef} from 'react';
+import React , { useRef} from 'react';
 import data from '../data'
 import {NavLink} from 'react-router-dom'
 
@@ -25,11 +25,11 @@ const selctList = (nav) =>{
     
 }
 
+
 const SubNav = ({navigation})=>{
     const li_1 = useRef()
     const subNavList = selctList(navigation);
 
-    
     return (
         subNavList.map((subItem ,idx) =><li className="sub-nav-item" key={idx}><NavLink activeClassName="active" to={subItem[1]}>{subItem[0]}</NavLink></li>)
     )
